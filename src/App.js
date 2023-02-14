@@ -1,25 +1,26 @@
-import logo from './logo.svg';
+import React from 'react';
+import { Route, Routes } from 'react-router-dom';
 import './App.css';
+import Banner from './Components/Banner';
+import Footer from './Components/Footer';
+import Header from './Components/Header';
+import SideDrawer from './Components/SideDrawer';
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+    <>
+      <Routes>
+        <Route path='/' element={<Header />} />
+        <Route path='/SideDrawer' element={<SideDrawer />} />
+      </Routes>
 
-export default App;
+      <Routes>
+        <Route path='/' element={<Banner />} />
+      </Routes>
+
+      <Routes>
+        <Route path='/' element={<Footer />} />
+      </Routes>
+    </>
+  )
+}
