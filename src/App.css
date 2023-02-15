@@ -1,6 +1,9 @@
 #navbarSupportedContent a {
   color: white;
 }
+.nav-title {
+  text-align: center;
+}
 
 .heading {
   color: white;
