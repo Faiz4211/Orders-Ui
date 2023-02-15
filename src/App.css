@@ -1,19 +1,5 @@
-.nav-title {
-  font-weight: 600;
+#navbarSupportedContent a {
   color: white;
-  font-size: 2.5rem;
-  letter-spacing: .75px;
-}
-
-.nav-title1 {
-  font-weight: 400;
-  color: white;
-  font-size: 1.5rem;
-  letter-spacing: .75px;
-}
-
-.full-nav {
-  padding: 20px
 }
 
 .heading {
@@ -94,6 +80,11 @@
   color: #000;
 }
 
+.latest-news a {
+  list-style: none;
+  text-decoration: none;
+}
+
 #social-icons {
   display: flex;
   justify-content: flex-start;
@@ -109,4 +100,18 @@
 
 #socil-icons li {
   color: #fff;
+}
+
+.widget ul li {
+  list-style: none;
+  padding: 5px 0;
+  margin: 3px 0;
+}
+
+.widget ul li a {
+  color: white;
+}
+
+.widget ul li :hover {
+  text-decoration: underline;
 }

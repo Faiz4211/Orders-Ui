@@ -1,10 +1,9 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState } from 'react';
 import BootstrapSwitchButton from 'bootstrap-switch-button-react';
+import { Link } from 'react-router-dom';
 import Dropdown from 'react-bootstrap/Dropdown';
 import { BsCart } from 'react-icons/bs';
 import '../App.css';
-import { useState } from 'react';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 
 export default function Header() {
@@ -12,14 +11,12 @@ export default function Header() {
         KFC: require('../assets/images/KFC.png'),
         KFCcard: require('../assets/images/2.jpg')
     }
-
     const [show, setShow] = useState(false);
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
-
     return (
         <>
-            {/* SideBar  */}
+            {/* SideBar */}
             <Offcanvas style={{ backgroundColor: 'black' }} placement='end' show={show} onHide={handleClose}>
                 <Offcanvas.Header closeVariant='white' closeButton>
                     <Offcanvas.Title className='d-inline-flex justify-content-around align-items-center text-center' style={{ color: 'white' }}>
@@ -80,56 +77,60 @@ export default function Header() {
                 }} type='button'>View Bucket</button>
             </Offcanvas>
 
-
-            {/* Header from here  */}
+            {/* nav  */}
             <div className="container">
-                <div className="loginBar container-fluid  d-flex justify-content-around flex-wrap align-items-center">
-                    <nav className="navbar-dark d-flex align-items-center flex-grow-1 ">
-                        <Link to="/" className="navbar-brand d-flex">
-                            <img id="nav-logo" src={img.KFC} alt="nav-logo" className="img-fluid d-inline-block align-baseline me-2" />
-                            <span className="nav-title">Burger</span>
-                            <span className="nav-title ms-3">
-                                <BootstrapSwitchButton
-                                    width={100}
-                                    className='nav-title'
-                                    checked={false}
-                                    onlabel='Delivery'
-                                    offlabel='Pickup'
-                                    offstyle="dark"
-                                    onstyle='dark'
-                                    size="md" />
-                            </span>
-                        </Link>
-                    </nav>
-                    <div className="d-inline-flex m-2 logincategory">
-                        <Link className='me-3'>
-                            <Dropdown>
-                                <Dropdown.Toggle variant="secondary" id="dropdown-basic">
-                                    Select Location
-                                </Dropdown.Toggle>
+                <nav className="navbar navbar-expand-lg navbar-light">
+                    <div className="container-fluid">
+                        <img src={img.KFC} alt='img' />
+                        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span className="navbar-toggler-icon"></span>
+                        </button>
+                        <div className="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li className="nav-item">
+                                    <Link className=" nav-link active" aria-current="page" to={'/'}>Burger</Link>
+                                </li>
+                                <li className="nav-item">
+                                    <BootstrapSwitchButton
+                                        width={80}
+                                        className='nav-title'
+                                        checked={false}
+                                        onlabel='Delivery'
+                                        offlabel='Pickup'
+                                        offstyle="dark"
+                                        onstyle='dark'
+                                        size="md" />
 
-                                <Dropdown.Menu variant='secondary'>
-                                    <Dropdown.Item href="#/action-1">Adress</Dropdown.Item>
-                                </Dropdown.Menu>
-                            </Dropdown>
+                                </li>
+                            </ul>
+                            <form className="d-flex">
+                                <Link className='me-3'>
+                                    <Dropdown size={20}>
+                                        <Dropdown.Toggle variant="secondary" id="dropdown-basic">
+                                            Location
+                                        </Dropdown.Toggle>
 
-                        </Link>
-                        <Link to=''>
-                            <BsCart
-                                className='me-2'
-                                size={40}
-                                color='white'
-                                onClick={handleShow}
-                            />
-                        </Link>
-                        <Link to='/'>
-                            <button type='button' className='btn btn-dark me-2'>Login</button>
-                        </Link>
-                        <Link to='/'>
-                            <button type='button' className='btn btn-dark me-2'>Register</button>
-                        </Link>
+                                        <Dropdown.Menu>
+                                            <Dropdown.Item style={{ color: 'black' }} href="#/action-1">Adress</Dropdown.Item>
+                                        </Dropdown.Menu>
+                                    </Dropdown>
+                                </Link>
+
+                                <Link to=''>
+                                    <BsCart
+                                        className='me-2'
+                                        size={30}
+                                        color='white'
+                                        onClick={handleShow}
+                                    />
+                                </Link>
+                                <Link to='/'>
+                                    <button type='button' className='btn btn-dark me-2'>Login/ <span>Register</span></button>
+                                </Link>
+                            </form>
+                        </div>
                     </div>
-                </div>
+                </nav>
             </div>
         </>
     )

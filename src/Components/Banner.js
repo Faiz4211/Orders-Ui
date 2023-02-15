@@ -46,7 +46,7 @@ export default function Banner(props) {
 
                 <div className="container d-flex justify-content-center">
                     <div className="row d-flex justify-content-center text-center">
-                        <div className="col-md-8">
+                        <div className="col-md-8 mb-3">
                             <div className="img">
                                 <img src={images.cart} alt="myImg" />
                                 <img src={images.cart} alt="myImg" />
