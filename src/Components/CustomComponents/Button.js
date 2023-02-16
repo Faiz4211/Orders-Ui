@@ -6,10 +6,10 @@ export default function Button() {
         <>
             <div className="row">
                 <div className="col-md-2">
-                    <button style={{
+                    <button className='BUTTON' style={{
                         backgroundColor: 'red',
                         color: 'white',
-                        height: '44px',
+                        minHeight: '50px',
                         width: '90%',
                         borderRadius: '8px',
                         marginBottom: '5px'
@@ -19,7 +19,7 @@ export default function Button() {
                     <button style={{
                         backgroundColor: 'red',
                         color: 'white',
-                        height: '44px',
+                        minHeight: '50px',
                         width: '90%',
                         borderRadius: '8px',
                         marginBottom: '5px'
@@ -29,7 +29,7 @@ export default function Button() {
                     <button style={{
                         backgroundColor: 'red',
                         color: 'white',
-                        height: '44px',
+                        minHeight: '50px',
                         width: '90%',
                         borderRadius: '8px',
                         marginBottom: '5px'
@@ -39,7 +39,7 @@ export default function Button() {
                     <button style={{
                         backgroundColor: 'red',
                         color: 'white',
-                        height: '44px',
+                        minHeight: '50px',
                         width: '90%',
                         borderRadius: '8px',
                         marginBottom: '5px'
@@ -49,7 +49,7 @@ export default function Button() {
                     <button style={{
                         backgroundColor: 'red',
                         color: 'white',
-                        height: '44px',
+                        minHeight: '50px',
                         width: '90%',
                         borderRadius: '8px',
                         marginBottom: '5px'
@@ -59,7 +59,7 @@ export default function Button() {
                     <button style={{
                         backgroundColor: 'red',
                         color: 'white',
-                        height: '44px',
+                        minHeight: '50px',
                         width: '90%',
                         borderRadius: '8px',
                         marginBottom: '5px'

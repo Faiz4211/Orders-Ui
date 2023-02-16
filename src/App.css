@@ -119,3 +119,13 @@
 .widget ul li :hover {
   text-decoration: underline;
 }
+
+.BUTTON {
+  color: white;
+}
+
+@media (max-width: 700) {
+  .BUTTON {
+    font-size: 12px;
+  }
+}

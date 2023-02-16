@@ -3,6 +3,7 @@ import BootstrapSwitchButton from 'bootstrap-switch-button-react';
 import { Link } from 'react-router-dom';
 import Dropdown from 'react-bootstrap/Dropdown';
 import { BsCart } from 'react-icons/bs';
+import { AiOutlineDelete, AiOutlinePlus } from 'react-icons/ai';
 import '../App.css';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 
@@ -31,41 +32,26 @@ export default function Header() {
                     <h5 className='text-white' style={{ marginLeft: '96px' }}>RS 260</h5>
                 </Offcanvas.Header>
                 <Offcanvas.Body style={{ color: 'white' }}>
-                    <div className="container align-items-center" style={{
+                    <div className="row" style={{
                         backgroundColor: '#1d1816',
-                        margin: '8px 0',
-                        padding: '16px',
-                        borderRadius: '15px'
+                        padding: '20px 10px',
+                        borderRadius: '10px',
+                        margin: '5px'
                     }}>
-                        <div className="row mb-4 d-flex justify-content-between align-items-center mb-3">
-                            <div className="col-md-2 col-lg-2 col-xl-2">
-                                <img
-                                    style={{ height: '70px', width: '70px' }}
-                                    src={img.KFCcard}
-                                    alt="Cotton T-shirt" />
-                            </div>
-                            <div className="col-md-3 col-lg-3 col-xl-3">
-                                <h6 className="text-white">Krunch Burger</h6>
-                            </div>
-                            <div className="col-md-3 col-lg-3 col-xl-2 d-flex">
-
-                                <button style={{ borderStyle: 'none' }} className="btn px-2">
-                                    <span style={{ color: 'red', fontSize: '20px' }}>-</span>
-                                </button>
-
-                                <span style={{ height: '30px', alignSelf: 'center' }} id="form1" min="0" name="quantity" value="1" type="number"
-                                    className="form-control form-control-sm text-center">2</span>
-
-                                <button onClick={() => console.log('pressed')} style={{ borderStyle: 'none' }} className="btn px-2">
-                                    <span style={{ color: 'red', fontSize: '20px' }}>+</span>
-                                </button>
-                            </div>
-                            <div className="col-md-3 col-lg-3 col-xl-3 ">
-                                <h6 className="mb-0">Rs 260</h6>
-                            </div>
+                        <div className="col-3">
+                            <img src={img.KFCcard} style={{ width: '60px', height: '60px' }} alt="img" />
                         </div>
-
+                        <div className="col-6 ">
+                            <span className='me-2'>Krunch Burger</span> <br />
+                            <span className='me-2'><AiOutlineDelete size={20} color='red' /></span>
+                            <span className='me-2'>2</span>
+                            <span className='me-2'><AiOutlinePlus size={20} color='red' /></span>
+                        </div>
+                        <div className="col-3">
+                            <span>Rs 260</span>
+                        </div>
                     </div>
+
                 </Offcanvas.Body>
                 <button style={{
                     backgroundColor: '#fe0000', color: 'white',

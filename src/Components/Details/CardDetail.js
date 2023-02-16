@@ -75,7 +75,7 @@ export default function CardDetail() {
                 {/* Optional Section from here  */}
                 <div className="row">
                     {/* First  Column  */}
-                    <div className="col-md-3">
+                    <div className="col-md-4">
                         <div className="d-flex flex-row justify-content-around align-items-center">
                             <h4 className='heading'>Add On</h4>
                             <button style={{
@@ -85,124 +85,10 @@ export default function CardDetail() {
                                 borderRadius: '50px'
                             }} className='ms-3'>optional</button>
                         </div>
-                        <div className="inner">
-                            <div className="container align-items-center" style={{
-                                backgroundColor: '#1d1816',
-                                margin: '8px 0',
-                                padding: '16px',
-                                borderRadius: '15px'
-                            }}>
-                                <div className="row mb-4 d-flex justify-content-between align-items-center mb-3">
-                                    <div className="col-md-2 ">
-                                        <img
-                                            style={{ height: '70px', width: '70px' }}
-                                            src={img.KFCcard}
-                                            alt="Cotton T-shirt" />
-                                    </div>
-                                    <div className="col-md-4 ">
-                                        <h6 className="ms-3 text-white text-center">Krunch Burger</h6>
-                                        <h6 className="ms-3 text-white text-center">Rs 260</h6>
-                                    </div>
-                                    <div className="col-md-4 d-flex">
-                                        <button
-                                            style={{
-                                                color: 'red',
-                                                backgroundColor: '#1d1816',
-                                                borderStyle: 'none'
-                                            }}
-                                        >+ Add</button>
-                                    </div>
-                                </div>
-                                <div className="row mb-4 d-flex justify-content-between align-items-center mb-3">
-                                    <div className="col-md-2">
-                                        <img
-                                            style={{ height: '70px', width: '70px' }}
-                                            src={img.KFCcard}
-                                            alt="Cotton T-shirt" />
-                                    </div>
-                                    <div className="col-md-4">
-                                        <h6 className="ms-3 text-white text-center">Krunch Burger</h6>
-                                        <h6 className="ms-3 text-white text-center">Rs 260</h6>
-                                    </div>
-                                    <div className="col-md-4 d-flex">
-                                        <button
-                                            style={{
-                                                color: 'red',
-                                                backgroundColor: '#1d1816',
-                                                borderStyle: 'none'
-                                            }}
-                                        >+ Add</button>
-                                    </div>
-                                </div>
-                                <div className="row mb-4 d-flex justify-content-between align-items-center mb-3">
-                                    <div className="col-md-2">
-                                        <img
-                                            style={{ height: '70px', width: '70px' }}
-                                            src={img.KFCcard}
-                                            alt="Cotton T-shirt" />
-                                    </div>
-                                    <div className="col-md-4">
-                                        <h6 className="ms-3 text-white text-center">Krunch Burger</h6>
-                                        <h6 className="ms-3 text-white text-center">Rs 260</h6>
-                                    </div>
-                                    <div className="col-md-4 d-flex">
-                                        <button
-                                            style={{
-                                                color: 'red',
-                                                backgroundColor: '#1d1816',
-                                                borderStyle: 'none'
-                                            }}
-                                        >+ Add</button>
-                                    </div>
-                                </div>
-                                <div className="row mb-4 d-flex justify-content-between align-items-center mb-3">
-                                    <div className="col-md-2">
-                                        <img
-                                            style={{ height: '70px', width: '70px' }}
-                                            src={img.KFCcard}
-                                            alt="Cotton T-shirt" />
-                                    </div>
-                                    <div className="col-md-4">
-                                        <h6 className="ms-3 text-white text-center">Krunch Burger</h6>
-                                        <h6 className="ms-3 text-white text-center">Rs 260</h6>
-                                    </div>
-                                    <div className="col-md-4 d-flex">
-                                        <button
-                                            style={{
-                                                color: 'red',
-                                                backgroundColor: '#1d1816',
-                                                borderStyle: 'none'
-                                            }}
-                                        >+ Add</button>
-                                    </div>
-                                </div>
-                                <div className="row mb-4 d-flex justify-content-between align-items-center mb-3">
-                                    <div className="col-md-2 ">
-                                        <img
-                                            style={{ height: '70px', width: '70px' }}
-                                            src={img.KFCcard}
-                                            alt="Cotton T-shirt" />
-                                    </div>
-                                    <div className="col-md-4">
-                                        <h6 className="ms-3 text-white text-center">Krunch Burger</h6>
-                                        <h6 className="ms-3 text-white text-center">Rs 260</h6>
-                                    </div>
-                                    <div className="col-md-4 d-flex">
-                                        <button
-                                            style={{
-                                                color: 'red',
-                                                backgroundColor: '#1d1816',
-                                                borderStyle: 'none'
-                                            }}
-                                        >+ Add</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                     </div>
 
                     {/* Second column  */}
-                    <div className="col-md-3">
+                    <div className="col-md-4">
                         <div className="d-flex justify-content-around align-items-center">
                             <h4 className='heading'>Add a Soft Drink</h4>
                             <button style={{
@@ -211,120 +97,6 @@ export default function CardDetail() {
                                 padding: '6px 12px',
                                 borderRadius: '50px'
                             }} className='ms-3'>optional</button>
-                        </div>
-                        <div className="inner">
-                            <div className="container align-items-center" style={{
-                                backgroundColor: '#1d1816',
-                                margin: '8px 0',
-                                padding: '16px',
-                                borderRadius: '15px'
-                            }}>
-                                <div className="row mb-4 d-flex justify-content-between align-items-center mb-3">
-                                    <div className="col-md-2">
-                                        <img
-                                            style={{ height: '70px', width: '70px' }}
-                                            src={img.KFCcard}
-                                            alt="Cotton T-shirt" />
-                                    </div>
-                                    <div className="col-md-4">
-                                        <h6 className="ms-3 text-white text-center">Krunch Burger</h6>
-                                        <h6 className="ms-3 text-white text-center">Rs 260</h6>
-                                    </div>
-                                    <div className="col-md-4 d-flex">
-                                        <button
-                                            style={{
-                                                color: 'red',
-                                                backgroundColor: '#1d1816',
-                                                borderStyle: 'none'
-                                            }}
-                                        >+ Add</button>
-                                    </div>
-                                </div>
-                                <div className="row mb-4 d-flex justify-content-between align-items-center mb-3">
-                                    <div className="col-md-2">
-                                        <img
-                                            style={{ height: '70px', width: '70px' }}
-                                            src={img.KFCcard}
-                                            alt="Cotton T-shirt" />
-                                    </div>
-                                    <div className="col-md-4">
-                                        <h6 className="ms-3 text-white text-center">Krunch Burger</h6>
-                                        <h6 className="ms-3 text-white text-center">Rs 260</h6>
-                                    </div>
-                                    <div className="col-md-4 d-flex">
-                                        <button
-                                            style={{
-                                                color: 'red',
-                                                backgroundColor: '#1d1816',
-                                                borderStyle: 'none'
-                                            }}
-                                        >+ Add</button>
-                                    </div>
-                                </div>
-                                <div className="row mb-4 d-flex justify-content-between align-items-center mb-3">
-                                    <div className="col-md-2">
-                                        <img
-                                            style={{ height: '70px', width: '70px' }}
-                                            src={img.KFCcard}
-                                            alt="Cotton T-shirt" />
-                                    </div>
-                                    <div className="col-md-4">
-                                        <h6 className="ms-3 text-white text-center">Krunch Burger</h6>
-                                        <h6 className="ms-3 text-white text-center">Rs 260</h6>
-                                    </div>
-                                    <div className="col-md-4 d-flex">
-                                        <button
-                                            style={{
-                                                color: 'red',
-                                                backgroundColor: '#1d1816',
-                                                borderStyle: 'none'
-                                            }}
-                                        >+ Add</button>
-                                    </div>
-                                </div>
-                                <div className="row mb-4 d-flex justify-content-between align-items-center mb-3">
-                                    <div className="col-md-2">
-                                        <img
-                                            style={{ height: '70px', width: '70px' }}
-                                            src={img.KFCcard}
-                                            alt="Cotton T-shirt" />
-                                    </div>
-                                    <div className="col-md-4">
-                                        <h6 className="ms-3 text-white text-center">Krunch Burger</h6>
-                                        <h6 className="ms-3 text-white text-center">Rs 260</h6>
-                                    </div>
-                                    <div className="col-md-4 d-flex">
-                                        <button
-                                            style={{
-                                                color: 'red',
-                                                backgroundColor: '#1d1816',
-                                                borderStyle: 'none'
-                                            }}
-                                        >+ Add</button>
-                                    </div>
-                                </div>
-                                <div className="row mb-4 d-flex justify-content-between align-items-center mb-3">
-                                    <div className="col-md-2">
-                                        <img
-                                            style={{ height: '70px', width: '70px' }}
-                                            src={img.KFCcard}
-                                            alt="Cotton T-shirt" />
-                                    </div>
-                                    <div className="col-md-4">
-                                        <h6 className="ms-3 text-white text-center">Krunch Burger</h6>
-                                        <h6 className="ms-3 text-white text-center">Rs 260</h6>
-                                    </div>
-                                    <div className="col-md-4 d-flex">
-                                        <button
-                                            style={{
-                                                color: 'red',
-                                                backgroundColor: '#1d1816',
-                                                borderStyle: 'none'
-                                            }}
-                                        >+ Add</button>
-                                    </div>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
