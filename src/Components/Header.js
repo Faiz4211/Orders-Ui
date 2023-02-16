@@ -8,12 +8,13 @@ import Offcanvas from 'react-bootstrap/Offcanvas';
 
 export default function Header() {
     const img = {
-        KFC: require('../assets/images/KFC.png'),
+        logo: require('../assets/images/BurgerLogo.png'),
         KFCcard: require('../assets/images/2.jpg')
     }
     const [show, setShow] = useState(false);
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
+
     return (
         <>
             {/* SideBar */}
@@ -79,9 +80,9 @@ export default function Header() {
 
             {/* nav  */}
             <div className="container">
-                <nav className="navbar navbar-expand-lg navbar-light">
+                <nav className="navbar navbar-expand-lg navbar-dark">
                     <div className="container-fluid">
-                        <img src={img.KFC} alt='img' />
+                        <img src={img.logo} alt='img' />
                         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                             <span className="navbar-toggler-icon"></span>
                         </button>

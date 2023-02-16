@@ -4,7 +4,9 @@ import './App.css';
 import Banner from './Components/Banner';
 import Footer from './Components/Footer';
 import Header from './Components/Header';
+import ImageDetail from './Components/Details/ImageDetail';
 import SideDrawer from './Components/SideDrawer';
+import CardDetail from './Components/Details/CardDetail';
 
 export default function App() {
   return (
@@ -16,6 +18,8 @@ export default function App() {
 
       <Routes>
         <Route path='/' element={<Banner />} />
+        <Route path='/ImageDetail' element={<ImageDetail />} />
+        <Route path='/CardDetail' element={<CardDetail />} />
       </Routes>
 
       <Routes>
