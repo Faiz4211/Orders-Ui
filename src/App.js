@@ -7,6 +7,7 @@ import Header from './Components/Header';
 import ImageDetail from './Components/Details/ImageDetail';
 import SideDrawer from './Components/SideDrawer';
 import CardDetail from './Components/Details/CardDetail';
+import Login from './Components/CustomComponents/Login';
 
 export default function App() {
   return (
@@ -25,6 +26,7 @@ export default function App() {
       <Routes>
         <Route path='/' element={<Footer />} />
       </Routes>
+      {/* <Login /> */}
     </>
   )
 }

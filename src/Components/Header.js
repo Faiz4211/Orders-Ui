@@ -25,7 +25,7 @@ export default function Header() {
                         <BsCart
                             className='me-2'
                             size={40}
-                            color='white'
+                            color='#fe0000'
                         />
                         <h5 className='text-white'>Your Bucket</h5>
                     </Offcanvas.Title>
@@ -43,9 +43,9 @@ export default function Header() {
                         </div>
                         <div className="col-6 ">
                             <span className='me-2'>Krunch Burger</span> <br />
-                            <span className='me-2'><AiOutlineDelete size={20} color='red' /></span>
+                            <span className='me-2'><AiOutlineDelete size={20} color='#fe0000' /></span>
                             <span className='me-2'>2</span>
-                            <span className='me-2'><AiOutlinePlus size={20} color='red' /></span>
+                            <span className='me-2'><AiOutlinePlus size={20} color='#fe0000' /></span>
                         </div>
                         <div className="col-3">
                             <span>Rs 260</span>
@@ -56,7 +56,7 @@ export default function Header() {
                 <button style={{
                     backgroundColor: '#fe0000', color: 'white',
                     borderRadius: '10px',
-                    borderColor: 'red',
+                    borderColor: '#fe0000',
                     height: '35px',
                     marginBottom: '15px',
                     width: '95%',
@@ -107,12 +107,12 @@ export default function Header() {
                                     <BsCart
                                         className='me-3'
                                         size={30}
-                                        color='white'
+                                        color='#fe0000'
                                         onClick={handleShow}
                                     />
                                 </Link>
                                 <Link to='/'>
-                                    <button type='button' className='btn btn-dark me-2'>Login/ <span>Register</span></button>
+                                    <button style={{ backgroundColor: '#fe0000', color: 'white' }} type='button' className='btn  me-2'>Login/ <span>Register</span></button>
                                 </Link>
                             </form>
                         </div>
