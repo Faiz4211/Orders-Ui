@@ -118,7 +118,7 @@ export default function Header() {
 
                                 <Link to=''>
                                     <BsCart
-                                        className='me-2'
+                                        className='me-3'
                                         size={30}
                                         color='white'
                                         onClick={handleShow}
