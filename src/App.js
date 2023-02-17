@@ -9,7 +9,6 @@ import CardDetail from './Components/Details/CardDetail';
 import Login from './Components/CustomComponents/Login';
 
 export default function App() {
-
   return (
     <>
       <Routes>
