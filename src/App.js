@@ -5,16 +5,16 @@ import Banner from './Components/Banner';
 import Footer from './Components/Footer';
 import Header from './Components/Header';
 import ImageDetail from './Components/Details/ImageDetail';
-import SideDrawer from './Components/SideDrawer';
 import CardDetail from './Components/Details/CardDetail';
 import Login from './Components/CustomComponents/Login';
 
 export default function App() {
+
   return (
     <>
       <Routes>
         <Route path='/' element={<Header />} />
-        <Route path='/SideDrawer' element={<SideDrawer />} />
+        <Route path='/Login' element={<Login />} />
       </Routes>
 
       <Routes>
@@ -26,7 +26,6 @@ export default function App() {
       <Routes>
         <Route path='/' element={<Footer />} />
       </Routes>
-      {/* <Login /> */}
     </>
   )
 }

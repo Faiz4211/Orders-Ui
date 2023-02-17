@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import BootstrapSwitchButton from 'bootstrap-switch-button-react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import Dropdown from 'react-bootstrap/Dropdown';
 import { BsCart } from 'react-icons/bs';
 import { AiOutlineDelete, AiOutlinePlus } from 'react-icons/ai';
@@ -10,12 +10,12 @@ import Offcanvas from 'react-bootstrap/Offcanvas';
 export default function Header() {
     const img = {
         logo: require('../assets/images/BurgerLogo.png'),
-        KFCcard: require('../assets/images/2.jpg')
+        KFCcard: require('../assets/images/2.jpg'),
     }
     const [show, setShow] = useState(false);
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
-
+    const navigate = useNavigate();
     return (
         <>
             {/* SideBar */}
@@ -90,7 +90,7 @@ export default function Header() {
 
                                 </li>
                             </ul>
-                            <form className="d-flex">
+                            {/* <form className="d-flex">
                                 <Link className='me-3'>
                                     <Dropdown size={20}>
                                         <Dropdown.Toggle variant="secondary" id="dropdown-basic">
@@ -111,14 +111,41 @@ export default function Header() {
                                         onClick={handleShow}
                                     />
                                 </Link>
-                                <Link to='/'>
-                                    <button style={{ backgroundColor: '#fe0000', color: 'white' }} type='button' className='btn  me-2'>Login/ <span>Register</span></button>
-                                </Link>
-                            </form>
+                                <button onClick={() => navigate('/Login')} style={{ backgroundColor: '#fe0000', color: 'white' }} type='button' className='btn  me-2'>Login/ <span>Register</span></button>
+                            </form> */}
                         </div>
+
+                        <form className="d-flex">
+                            <Link className='me-3'>
+                                <Dropdown size={20}>
+                                    <Dropdown.Toggle variant="secondary" id="dropdown-basic">
+                                        Location
+                                    </Dropdown.Toggle>
+
+                                    <Dropdown.Menu>
+                                        <Dropdown.Item style={{ color: 'black' }} href="#/action-1">Adress</Dropdown.Item>
+                                    </Dropdown.Menu>
+                                </Dropdown>
+                            </Link>
+
+                            <Link to=''>
+                                <BsCart
+                                    className='me-3'
+                                    size={30}
+                                    color='#fe0000'
+                                    onClick={handleShow}
+                                />
+                            </Link>
+                            <button onClick={() => navigate('/Login')} style={{ backgroundColor: '#fe0000', color: 'white' }} type='button' className='btn  me-2'>Login/ <span>Register</span></button>
+                            {/* <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span className="navbar-toggler-icon"></span>
+                        </button> */}
+                        </form>
                     </div>
                 </nav>
+
             </div>
+
         </>
     )
 }

@@ -130,6 +130,10 @@
   }
 }
 
-.Login {
+.login {
   background: url('../src/assets/images/bg.png') no-repeat center center;
+}
+
+.MyClass {
+  color: white;
 }
