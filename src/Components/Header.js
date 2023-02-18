@@ -69,14 +69,8 @@ export default function Header() {
                 <nav className="navbar navbar-expand-lg navbar-dark">
                     <div className="container-fluid">
                         <img src={img.logo} alt='img' />
-                        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                            <span className="navbar-toggler-icon"></span>
-                        </button>
                         <div className="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-                                <li className="nav-item">
-                                    <Link className=" nav-link active" aria-current="page" to={'/'}>Burger</Link>
-                                </li>
                                 <li className="nav-item">
                                     <BootstrapSwitchButton
                                         width={80}
@@ -90,31 +84,7 @@ export default function Header() {
 
                                 </li>
                             </ul>
-                            {/* <form className="d-flex">
-                                <Link className='me-3'>
-                                    <Dropdown size={20}>
-                                        <Dropdown.Toggle variant="secondary" id="dropdown-basic">
-                                            Location
-                                        </Dropdown.Toggle>
-
-                                        <Dropdown.Menu>
-                                            <Dropdown.Item style={{ color: 'black' }} href="#/action-1">Adress</Dropdown.Item>
-                                        </Dropdown.Menu>
-                                    </Dropdown>
-                                </Link>
-
-                                <Link to=''>
-                                    <BsCart
-                                        className='me-3'
-                                        size={30}
-                                        color='#fe0000'
-                                        onClick={handleShow}
-                                    />
-                                </Link>
-                                <button onClick={() => navigate('/Login')} style={{ backgroundColor: '#fe0000', color: 'white' }} type='button' className='btn  me-2'>Login/ <span>Register</span></button>
-                            </form> */}
                         </div>
-
                         <form className="d-flex">
                             <Link className='me-3'>
                                 <Dropdown size={20}>
@@ -127,7 +97,6 @@ export default function Header() {
                                     </Dropdown.Menu>
                                 </Dropdown>
                             </Link>
-
                             <Link to=''>
                                 <BsCart
                                     className='me-3'
@@ -137,15 +106,13 @@ export default function Header() {
                                 />
                             </Link>
                             <button onClick={() => navigate('/Login')} style={{ backgroundColor: '#fe0000', color: 'white' }} type='button' className='btn  me-2'>Login/ <span>Register</span></button>
-                            {/* <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                            <span className="navbar-toggler-icon"></span>
-                        </button> */}
                         </form>
+                        <button className="navbar-toggler mt-2 sm-postion-absolute end-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span className="navbar-toggler-icon"></span>
+                        </button>
                     </div>
                 </nav>
-
             </div>
-
         </>
     )
 }
