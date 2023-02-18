@@ -6,7 +6,8 @@ import Footer from '../Footer'
 export default function CardDetail() {
     const img = {
         Burger: require('../../assets/images/burger.png'),
-        KFCcard: require('../../assets/images/2.jpg')
+        KFCcard: require('../../assets/images/2.jpg'),
+        Pepsi: require('../../assets/images/Pepsi.png')
     }
     return (
         <>
@@ -82,9 +83,27 @@ export default function CardDetail() {
                                 backgroundColor: '#000e08',
                                 color: '#009748',
                                 padding: '6px 12px',
-                                borderRadius: '50px'
+                                borderRadius: '50px',
+                                marginBottom: '10px',
+                                marginTop: '10px'
                             }} className='ms-3'>optional</button>
                         </div>
+
+                        <div style={{ backgroundColor: '#1d1816', borderRadius: '10px', borderColor: 'white', border: '1px solid white' }} className="container py-3">
+                            <div className="row p-2">
+                                <div className="col-4">
+                                    <img style={{ width: '50px', height: '50px' }} src={img.Burger} alt="img" />
+                                </div>
+                                <div className="col-4 text-white">
+                                    <p className='text-white'>ColesLaw <br /> <span>Rs 80</span></p>
+                                </div>
+
+                                <div className="col-4">
+                                    <span style={{ color: 'red', cursor: 'pointer' }}>+ Add</span>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
 
                     {/* Second column  */}
@@ -95,8 +114,26 @@ export default function CardDetail() {
                                 backgroundColor: '#000e08',
                                 color: '#009748',
                                 padding: '6px 12px',
-                                borderRadius: '50px'
+                                borderRadius: '50px',
+                                marginBottom: '10px',
+                                marginTop: '10px'
                             }} className='ms-3'>optional</button>
+                        </div>
+
+                        <div style={{ backgroundColor: '#1d1816', borderRadius: '10px', borderColor: 'white', border: '1px solid white' }} className="container py-3">
+                            <div className="row p-2">
+                                <div className="col-4">
+                                    <img style={{ width: '50px', height: '50px' }} src={img.Pepsi} alt="img" />
+                                </div>
+                                <div className="col-4 text-white">
+                                    <p className='text-white'>Regular Pepsi<br /><span>Rs 100</span></p>
+                                </div>
+
+                                <div className="col-4">
+                                    <span style={{ color: 'red', cursor: 'pointer' }}>+ Add</span>
+                                </div>
+
+                            </div>
                         </div>
                     </div>
                 </div>
