@@ -1,19 +1,17 @@
 {
   "files": {
-    "main.css": "/Orders-Ui/static/css/main.830eecda.css",
-    "main.js": "/Orders-Ui/static/js/main.ae1900a9.js",
+    "main.css": "/Orders-Ui/static/css/main.3ddb5821.css",
+    "main.js": "/Orders-Ui/static/js/main.f4ab290b.js",
     "static/js/787.28cb0dcd.chunk.js": "/Orders-Ui/static/js/787.28cb0dcd.chunk.js",
-    "static/media/KFC 2.PNG": "/Orders-Ui/static/media/KFC 2.9bb7d490b91def2b746c.PNG",
-    "static/media/KFC 3.PNG": "/Orders-Ui/static/media/KFC 3.11ecfb062a3d7319eba8.PNG",
-    "static/media/KFC Background.jpg": "/Orders-Ui/static/media/KFC Background.e051c3977f7c795d1efd.jpg",
-    "static/media/2.jpg": "/Orders-Ui/static/media/2.95900e1cbd684bd2cbef.jpg",
+    "static/media/payment gif.gif": "/Orders-Ui/static/media/payment gif.dfb87e213ad8d036bf43.gif",
+    "static/media/bg.png": "/Orders-Ui/static/media/bg.63b43f2c55713840d21b.png",
     "index.html": "/Orders-Ui/index.html",
-    "main.830eecda.css.map": "/Orders-Ui/static/css/main.830eecda.css.map",
-    "main.ae1900a9.js.map": "/Orders-Ui/static/js/main.ae1900a9.js.map",
+    "main.3ddb5821.css.map": "/Orders-Ui/static/css/main.3ddb5821.css.map",
+    "main.f4ab290b.js.map": "/Orders-Ui/static/js/main.f4ab290b.js.map",
     "787.28cb0dcd.chunk.js.map": "/Orders-Ui/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.830eecda.css",
-    "static/js/main.ae1900a9.js"
+    "static/css/main.3ddb5821.css",
+    "static/js/main.f4ab290b.js"
   ]
 }
