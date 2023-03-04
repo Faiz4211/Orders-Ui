@@ -32,11 +32,11 @@ export default function Header() {
                     <h5 className='text-white' style={{ marginLeft: '96px' }}>RS 260</h5>
                 </Offcanvas.Header>
                 <Offcanvas.Body style={{ color: 'white' }}>
-                    <div className="row" style={{
+                    <div className="row " style={{
                         backgroundColor: '#1d1816',
                         padding: '20px 10px',
                         borderRadius: '10px',
-                        margin: '5px'
+                        margin: '5px',
                     }}>
                         <div className="col-3">
                             <img src={img.KFCcard} style={{ width: '60px', height: '60px' }} alt="img" />
@@ -53,7 +53,9 @@ export default function Header() {
                     </div>
 
                 </Offcanvas.Body>
-                <button style={{
+
+
+                <button onClick={() => navigate('/Payment')} style={{
                     backgroundColor: '#fe0000', color: 'white',
                     borderRadius: '10px',
                     borderColor: '#fe0000',

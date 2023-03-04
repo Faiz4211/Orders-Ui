@@ -5,6 +5,7 @@ import Footer from '../Footer';
 import Form from 'react-bootstrap/Form';
 import { useState } from 'react';
 import { ToastContainer, toast } from 'react-toastify';
+import { useNavigate } from 'react-router-dom';
 
 export default function Login() {
     const img = {
@@ -15,10 +16,11 @@ export default function Login() {
     const [name, setName] = useState();
     const [phoneNumber, setPhoneNumber] = useState();
 
+    const navigate = useNavigate();
     const handlSubmit = (e) => {
         e.preventDefault();
-        if (name === "" || phoneNumber === "") {
-            toast.error('Please Enter Required Fields', {
+        if (!name || !phoneNumber) {
+            toast.error('Enter Required Fields', {
                 position: "top-right",
                 autoClose: 2000,
                 hideProgressBar: false,
@@ -31,6 +33,7 @@ export default function Login() {
         else {
             setName("")
             setPhoneNumber("")
+            navigate('/Otp')
         }
     }
 
