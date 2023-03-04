@@ -2,6 +2,8 @@ import React from 'react';
 import { useState } from 'react';
 // import { Route, Routes } from 'react-router-dom';
 import './App.css';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 // import Banner from './Components/Banner';
 // import Footer from './Components/Footer';
 // import Header from './Components/Header';
@@ -25,10 +27,28 @@ export default function App() {
   const handlSubmitt = (e) => {
     e.preventDefault();
     if (!email || !phoneNumber || !id || !amount) {
-      alert('Enter all fields')
+      toast('Enter all fields', {
+        position: "top-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+      });
     }
     else {
-      alert('Success')
+      toast('Success', {
+        position: "top-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+      });
       setEmail('')
       setPhoneNumber('')
       setId('')
@@ -97,6 +117,7 @@ export default function App() {
               <input value={amount} onChange={(e) => setAmount(e.target.value)} type="number" class="form-control" id="exampleFormControlInput1" placeholder="Amount" />
             </div>
             <button onClick={handlSubmitt} type="button" class="btn btn-primary">Pay Now</button>
+            <ToastContainer />
           </div>
 
         </div>
